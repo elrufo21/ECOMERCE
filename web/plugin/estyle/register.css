@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    background-color: #F0F4EF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content {
+    width: 25rem;
+    height: 30rem;
+    border: 1px solid #000;
+    margin-top: 3rem;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 3px #C0C5C1;
+    display: flex;
+    align-content: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    display: block;
+    height: 2rem;
+    width: 15rem;
+    padding-left: 3px;
+    margin-top: .5rem;
+    border: 1px solid #694F5D;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #694F5D;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+label input {
+    border: 1px solid #694F5D;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #694F5D;
+    display: inline-block;
+    width: 5.5rem;
+    font-size: .7rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #7D8CC4;
+    box-shadow: 2px 2px 2px 2px #7D8CC4;
+}
+
+button {
+    background-color: #E9EBF8;
+    margin-top: 1.5rem;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #899cd8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #694F5D;
+    box-shadow: 1px 1px 1px 1px #694F5D;
+}
+
+button:hover {
+    color: #E9EBF8;
+    background-color: #899cd8 ;
+}

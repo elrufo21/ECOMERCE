@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
-    background-color: #C2FBEF;
+    background-color: #F0F4EF;
+    font-family: 'Exo', sans-serif;
+}
+.nav-bar__items{
+    font-size: 1.5rem;
 }
 
 .nav-bar{
@@ -25,7 +30,14 @@
 }
 .logo{
     width: 40%;
+    font-size: 1.8rem;
 }
 span{
     color: rgb(165, 16, 16);
+}
+.menu-despl{
+    visibility: hidden;
+}
+header  .nav-bar__items li:hover>ul{
+    visibility: visible;
 }
