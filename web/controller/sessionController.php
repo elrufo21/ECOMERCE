@@ -1,5 +1,6 @@
 <?php 
     if (isset($_GET['s'])) {
-        echo "Existe";
+        session_start();
+        session_destroy();
+        header("Location: ../index.php");
     }
-?>

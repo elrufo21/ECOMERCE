@@ -25,7 +25,6 @@
 
                     <button type="submit" name="enviar">Ingresar</button>
                 </form>
-
             </div>
             <span class="span">¿No tiene una cuenta?<a href="#" id="crear" onclick="urlCrear()">Cree una</a></span><br>
             <span class="span2">¿Olvidaste tus credenciales?<a href="register.php">Recuperar</a></span>

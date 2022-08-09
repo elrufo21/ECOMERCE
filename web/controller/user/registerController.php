@@ -9,7 +9,6 @@
         $dateBirth= $_POST['dateBith'];
         $password= $_POST['password'];
         $passwordComf= $_POST['passwordComf'];
-        echo $name.$firstName.$lastName.$email.$dateBirth.$password.$passwordComf;
         if ($password != $passwordComf) {
             header("Location: ../../view/includes/user/sesion/register.php");
         }else{
@@ -21,7 +20,7 @@
             $sql->bindParam(4,$email);
             $sql->bindParam(5,$password);
             $sql->bindParam(6,$dateBirth);
-            
+            $sql->execute();
             session_start();
             
             $_SESSION['user']=array();

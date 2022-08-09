@@ -18,7 +18,13 @@
     <?php
     include "view/includes/complements/header.php";
     ?>
-
+    <?php
+        if (isset($_GET['venta'])) {
+            include "view/includes/contents/sell.php";
+        }elseif (isset($_GET['tienda'])) {
+            include "view/includes/contents/shop.php";
+        }
+    ?>
 
     <?php
     include "view/includes/complements/footer.php"
