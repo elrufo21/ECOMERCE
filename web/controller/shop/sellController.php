@@ -9,7 +9,7 @@
         $category=$_POST['category'];
         $descuento=$_POST['descuento'];
         $idUser = $_GET['id'];
-    
+        
         
         $sql = "INSERT INTO product(`nameProduct`,`description`,`state`,`photo`,`price`,`idUser`,`category`,`descuento`) VALUES (?,?,?,?,?,?,?,?)";
         $sql=$mdb->prepare($sql);

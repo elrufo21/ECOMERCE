@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F0F4EF;
+    font-family: 'Exo', sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ContrainerProduct{
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 1px #3498db;
+    box-sizing: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+
+}
+.ContrainerProduct .image img{
+    width: 750px;
+    height: 500px;
+    padding: 5px;
+}
+.ContrainerProduct h1{
+    font-size: 50px;
+    font-weight: 5000;
+    text-transform: uppercase;
+}
+.publicadoP{
+    text-align: end;
+    background-color: #4a5863;
+    color: #F0F4EF;
+}
+.publicadoP a{
+    text-decoration: none;
+    color: #dda9f1;
+}
+.publicadoP span{
+    color: #707070;
+    font-size: 12px;
+    margin-left: 10px;
+    
+}

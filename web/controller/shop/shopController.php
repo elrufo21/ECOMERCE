@@ -4,3 +4,4 @@
     $query= $mdb->prepare($sql);
     $query->execute();
     $result=$query->fetchAll(PDO::FETCH_OBJ);
+
