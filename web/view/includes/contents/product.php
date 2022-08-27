@@ -13,15 +13,16 @@
     <?php
     $idP = $_GET['idP'];
 
-    require_once "../../../model/productModel.php";
+    require "../../../model/productModel.php";
     foreach ($result as $dato) {
         $idUser = $dato->idUser;
+        
         require "../../../model/userModel.php";
     ?>
         <div class="container">
 
             <div class="ContrainerProduct">
-            <h4 class="publicadoP">Publicado por <a href=""><?php echo $nombre ?></a> el <span><?php echo $dato->publicationDate?></span></h4>
+            <h4 class="publicadoP">Publicado por <a href="../user/profile.php?id=<?php echo $idUser ?>"><?php echo $nombre ?></a> el <span><?php echo $dato->publicationDate?></span></h4>
                 <div class="image">
                     <img src="<?php echo $dato->photo ?>" alt="">
                 </div>

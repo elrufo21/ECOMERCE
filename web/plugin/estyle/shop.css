@@ -1,11 +1,13 @@
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 810px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    border: solid black 2px;
+    overflow-y: scroll;
 }
 .container .card{
     width: 280px;

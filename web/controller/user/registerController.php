@@ -21,18 +21,12 @@
             $sql->bindParam(5,$password);
             $sql->bindParam(6,$dateBirth);
             $sql->execute();
-            session_start();
-            
-            $_SESSION['user']=array();
-            $_SESSION['user']['name']=$name;
-            $_SESSION['user']['email']=$email;
-            $_SESSION['user']['birth']=$dateBirth;
-
-            
+            header("Locatio: ../../view/includes/user/sesion/login.php");
         }
 
     }else{
-        echo "algo salio mal";
+        echo "<script type='text/javascript'> alert('No se pudo registrar')</script>";
+        header("Location: ../../view/includes/user/sesion/register.php");
     }
 
 ?>
